@@ -1,0 +1,129 @@
+/*	로고 이미지 가운데 정렬용	*/
+#logo{
+	text-align: center;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+/*	 메뉴바 css	*/
+#menubar{
+	background: #2565ae;
+}
+#menubar ul{
+	margin:0;
+	padding:0;
+	width:567;
+	text-align:center;
+	border-top:5px solid transparent;
+	border-bottom:5px solid transparent;
+}
+#menubar ul > li{
+	display:inline-block; /*새 줄로 넘어가지x*/
+	list-style-tyle:none; /*마커 삭제*/
+	padding:0px 20px; /*top, bottom=0, left, right=15*/
+}
+#menubar ul > li > a{
+	color:white;
+	text-decoration:none; /*링크 보이지 x*/
+}
+#menubar ul > li > a:hover{ /*마우스 올라갔을 때 */
+	color:#92b2d7; /*1안: 하늘색*/
+}
+/* 유동 메뉴  */
+#topmenu{
+	background: white;
+	position:sticky;
+	padding-top:32px;
+	top:-32px;
+}
+
+
+/* 공통 적용 */
+/* a 링크 밑줄 없앰 */
+a{
+	text-decoration-line:none;
+	list-style-tyle:none;
+	color:black;
+}
+#alignCenter{ /*가운데 정렬*/
+/*	width:500px;*/
+	text-align:center;
+}
+
+
+/* 개별 적용*/
+/* index 화면 분리용 (표)*/
+#mainTable{ /* 표 큰 틀 */
+/*	margin-top:20px;*/
+	padding:15px;
+/*	color:whitesmoke;*/
+/*	background:#808080;*/
+	margin-left:auto;
+	margin-right:auto;
+}
+#mainTd{ /* 표 내용 가운데 정렬, 간격 투명색으로 띄우기*/
+	text-align:center;
+	border:10px solid transparent;
+}
+
+
+#productLetter{ /* 제품 표 글씨 스타일: 남색, 16px */
+	color:#0e2845;
+	font-size: 16px;
+}
+
+
+/* history.html 목차 선택 */
+#index ol > li > a:hover{
+	color:#92b2d7;
+}
+/*fountain pen list 목차 선택*/
+#index li > a:hover{
+	color:#92b2d7;
+}
+#index li > ul > li > a:hover{
+	color:#92b2d7;
+}
+
+
+
+/* 큰 제목 css */
+.title{
+	text-align: center;
+	font-size: 32px;
+	color:#2565ae;
+}
+/* 작은 제목 css(history.html) */
+.title2{
+/*	text-align: left;*/
+	color:#0e2845;
+}
+
+/* 텍스트 그림자 */
+.ThreeDEffect{
+	text-shadow: 2px 2px 4px  #92b2d7;
+}
+.blurText{
+	text-shadow:2px 3px 3px #92b2d7;
+}
+
+/* 설명 칸 양식 */
+.space{
+	border: 5px solid transparent;
+}
+/* 질문 제목 간격 */
+.questionTitle{
+	padding-right:15px;
+	font-size: 18px;
+}
+
+
+/* 칸 가운데 오도록 */
+.middleMargin{
+	width:900px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.divColor{
+	background-color: whitesmoke;
+	padding:20px;
+}

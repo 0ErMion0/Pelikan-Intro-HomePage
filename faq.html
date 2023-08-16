@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>index page</title>
+	<style>@import url(mystyle.css);</style>
+	<script type="text/javascript" defer src="FAQbuttonClickscript.js"></script>
+</head>
+
+<body>
+	<!-- header -->
+	<header id="topmenu">
+		<figure id="logo">
+			<a href="index.html">
+				<img height="50" src="media/logo of pelikan.png" alt="메인 페이지">
+			</a>
+		</figure>
+		
+		<!-- menu -->
+		<nav id="menubar">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="history.html">About Pelikan</a></li>
+				<li><a href="fountain pen.html">Fountain pen</a></li>
+				<!-- <li><a href="ink.html">Ink</a></li> -->
+				<!-- <li><a href="how to.html">How to Use</a></li> -->
+				<li><a href="recommendation.html">What to buy</a></li>
+				<li><a href="faq.html" style="color:#92b2d7;">Q&A</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- section -->
+	<section class="space" id="alignCenter">
+		<h1 class="title ThreeDEffect">Q&A</h1>
+		&nbsp;<small>궁금하신 점을 작성하여 등록하시면 됩니다.</small>
+	</section>
+	<hr>
+	<section>
+		<!-- 질문 작성지 -->
+		<div class="middleMargin divColor">
+			<!-- 질문란 -->
+			<article class="space">
+				<!-- 질문 종류 -->
+				<form class="space">
+					<b class="title2 questionTitle">질문 종류</b>
+					<input type="radio" name="question type" value="1">제품 문의
+					<input type="radio" name="question type" value="2">A/S 문의
+					<input type="radio" name="question type" value="3">기타
+				</form>
+				<!-- 제품 종류 -->
+				<form class="space">
+					<b class="title2 questionTitle">제품 종류</b>
+					<select name="product type">
+						<option value="1">만년필 - Limited Editions</option>
+						<option value="2">만년필 - Special Editions</option>
+						<option value="3">만년필 - Premium</option>
+						<option value="4">만년필 - Elegance</option>
+						<option value="5">잉크</option>
+						<option value="6">기타</option>
+					</select>
+				</form>
+				<!-- 제품 이름 -->
+				<form class="space">
+					<b class="title2 questionTitle">제품 이름</b>
+					<input type="text" value="">
+				</form>
+				<!-- 질문 -->
+				<form class="space">
+					<div style="padding-bottom: 10px;"><b class="title2 questionTitle">질문</b></div>
+					<textarea cols="125" rows="5" placeholder="이곳에 입력해주세요..."></textarea>
+				</form>
+			</article>
+			<hr>
+			<!-- 답변 받을 곳 -->
+			<article class="space">
+				<div style="padding-bottom: 10px;"><b class="title2 questionTitle">답변 받을 곳</b></div>
+				<div style="padding-bottom: 10px;">이메일 : <input type="email" placeholder="id@host"></div>
+				<div style="padding-bottom: 10px;">전화번호 : <input type="tell" placeholder="010-1234-5678"></div>
+			</article>
+			<hr>
+			<!-- 이용 만족도 -->
+			<article>
+				<form class="space">
+					<div style="padding-bottom: 10px;"><b class="title2 questionTitle">이용만족도</b></div>
+					1<input type="range" min="1" max="5" value="5" list="userSatisfaction">5
+					<datalist id="userSatisfaction">
+						<option value="1" label="Very Bad"></option>
+						<option value="2" label="Bad"></option>
+						<option value="3" label="Soso"></option>
+						<option value="4" label="Good"></option>
+						<option value="5" label="Very Good"></option>
+					</datalist>
+				</form>
+			</article>
+			<hr>
+			<div id="alignCenter">
+				<!-- <input type="button" value="제출" onclick="전송">
+					<script type="text/javascript" src="FAQbuttonClickscript.js"></script> -->
+
+				<!-- <button id="FAQbuttonClick" onclick="FAQbuttonClick()">제출</button> -->
+
+				<!-- <button id="FAQbuttonClick">제출</button>
+				<script>
+					const buttonEl = document.querySelector("button");
+					buttonEl.onclick = function (event) {
+					  alert(this.textContent);
+					  // alert(event.target.textContent);
+					};
+				</script> -->
+
+				<button>제출</button>
+				<!-- <script type="text/javascript">
+					const buttonEl = document.querySelector("button");
+					buttonEl.onclick = function (event) {
+					  var ret = confirm("제출하시겠습니까?");
+					  if(ret==true){
+					  	location.reload();
+					  }
+					};
+				</script> -->
+			</div>
+		</div>
+	</section>
+</body>
+</html>
